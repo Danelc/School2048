@@ -1,0 +1,100 @@
+﻿<Window x:Class="the2048.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" KeyDown="Window_KeyDown" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="426" Width="525" AllowsTransparency="False" Closing="Window_Closing" Closed="Window_Closed" Padding="1" IsTabStop="True" Focusable="True">
+    <Grid Background="#FFF8F7EC">
+        <Rectangle Height="174" HorizontalAlignment="Left" Margin="164,131,0,0" Name="rectangle1" VerticalAlignment="Top" Width="174" Fill="#FFB6A99B">
+            <Rectangle.Stroke>
+                <SolidColorBrush />
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Label Height="113" HorizontalAlignment="Left" Margin="90,12,0,0" Name="label17" VerticalAlignment="Top" Width="338" RenderTransformOrigin="0.5,0.5">
+            <Label.Background>
+                <ImageBrush ImageSource="C:\Users\Daniel\Documents\visual studio 2015\Projects\new2048\new2048\image\newtitle.png
+" />
+            </Label.Background>
+        </Label>
+        <Label Content="1" Height="36" HorizontalAlignment="Left" Margin="170,137,0,0" Name="label1" VerticalAlignment="Top" Width="36" IsEnabled="True" Foreground="Black" Background="#FFFF9658" BorderBrush="#FFFF7231" FontSize="12" HorizontalContentAlignment="Center"></Label>
+        <Label Content="9" Height="36" HorizontalAlignment="Left" Margin="170,221,0,0" Name="label9" VerticalAlignment="Top" Width="36" Background="#FFFF9945" HorizontalContentAlignment="Center" />
+        <Label Content="8" Height="36" HorizontalAlignment="Left" Margin="296,179,0,0" Name="label8" VerticalAlignment="Top" Width="36" Background="#FFFFB679" HorizontalContentAlignment="Center" />
+        <Label Content="7" Height="36" HorizontalAlignment="Left" Margin="254,179,0,0" Name="label7" VerticalAlignment="Top" Width="36" Background="#FFF8A966" HorizontalContentAlignment="Center" />
+        <Label Content="6" Height="36" Margin="212,179,0,0" Name="label6" VerticalAlignment="Top" Background="#FFF2B37F" HorizontalAlignment="Left" Width="36" HorizontalContentAlignment="Center" />
+        <Label Content="5" Height="36" HorizontalAlignment="Left" Margin="170,179,0,0" Name="label5" VerticalAlignment="Top" Width="36" Background="#FFF5AD71" HorizontalContentAlignment="Center" />
+        <Label Content="4" Height="36" HorizontalAlignment="Left" Margin="296,137,0,0" Name="label4" VerticalAlignment="Top" Width="36" Background="#FFEFA96E" HorizontalContentAlignment="Center" />
+        <Label Content="3" Height="36" HorizontalAlignment="Left" Margin="254,137,0,0" Name="label3" VerticalAlignment="Top" Width="36" Background="#FFFFB679" HorizontalContentAlignment="Center" />
+        <Label Content="2" Height="36" HorizontalAlignment="Left" Margin="212,137,0,0" Name="label2" VerticalAlignment="Top" Width="36" Background="#FFFFB16F" HorizontalContentAlignment="Center" />
+        <Label Background="#FFF5AF84" Content="10" Height="36" HorizontalAlignment="Left" Margin="212,221,0,0" Name="label10" VerticalAlignment="Top" Width="36" HorizontalContentAlignment="Center" />
+        <Label Background="#FFFF9945" Content="12" Height="36" HorizontalAlignment="Left" Margin="296,221,0,0" Name="label12" VerticalAlignment="Top" Width="36" HorizontalContentAlignment="Center" />
+        <Label Background="#FFFF9945" Content="11" Height="36" HorizontalAlignment="Left" Margin="254,221,0,0" Name="label11" VerticalAlignment="Top" Width="36" HorizontalContentAlignment="Center" />
+        <Label Background="#FFFF9945" Content="13" Height="36" HorizontalAlignment="Left" Margin="170,263,0,0" Name="label13" VerticalAlignment="Top" Width="36" HorizontalContentAlignment="Center" />
+        <Label Background="#FFFF9945" Content="14" Height="36" HorizontalAlignment="Left" Margin="212,263,0,0" Name="label14" VerticalAlignment="Top" Width="36" HorizontalContentAlignment="Center" />
+        <Label Background="#FFFF9945" Content="15" Height="36" Margin="254,263,0,0" Name="label15" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="36" />
+        <Label Background="#FFFF9945" Content="16" Height="36" HorizontalAlignment="Left" Margin="296,263,0,0" Name="label16" VerticalAlignment="Top" Width="36" HorizontalContentAlignment="Center" />
+        <Button Content="^" Height="23" HorizontalAlignment="Left" Margin="215,319,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="buttonU_Click" Background="#FFA69C92" Foreground="#FFF8F7EC" IsEnabled="True" />
+        <Button Content="&lt;" Height="23" HorizontalAlignment="Left" Margin="134,339,0,0" Name="button2" VerticalAlignment="Top" Width="75" Click="buttonL_Click" Background="#FFA69C92" Foreground="#FFF8F7EC" />
+        <Button Content="v" Height="23" HorizontalAlignment="Left" Margin="215,353,0,0" Name="button3" VerticalAlignment="Top" Width="75" Click="buttonD_Click" Background="#FFA69C92" Foreground="#FFF8F7EC" />
+        <Button Content=">" Height="23" HorizontalAlignment="Left" Margin="296,339,0,0" Name="button4" VerticalAlignment="Top" Width="75" Click="buttonR_click" IsEnabled="True" Background="#FFA69C92" Foreground="#FFF8F7EC" />
+        <Button Content="New Game" Height="31" HorizontalAlignment="Left" Margin="340,93,0,0" Name="button5" VerticalAlignment="Top" Width="85" Background="#FF8F7A66" Foreground="#FFF8F7EC" FontFamily="Script MT" FontSize="16" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" Click="buttonRestart_click" Opacity="0" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="280,33,0,0" Name="textBlock1" Text="TextBlock" VerticalAlignment="Top" TextAlignment="Center" Foreground="#FFEEE4DA" Width="58" Background="#FFBBADA0" FontSize="14" />
+        <CheckBox Content="Button Failure" Height="15" HorizontalAlignment="Left" Margin="0,339,0,0" Name="checkBox1" VerticalAlignment="Top" Foreground="#FF868686" IsChecked="True" Opacity="0" />
+        <Rectangle Fill="#FFFFE66F" Height="174" HorizontalAlignment="Left" Margin="164,131,0,0" Name="rectangle2" VerticalAlignment="Top" Width="174" Opacity="0">
+            <Rectangle.Stroke>
+                <SolidColorBrush />
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBlock Height="54" HorizontalAlignment="Left" Margin="182,189,0,0" Name="textBlock2" Text="You Lose !" VerticalAlignment="Top" Width="146" Foreground="#FFF8F7EC" TextAlignment="Center" FontSize="28" Opacity="0" />
+        <Button Content="Undo" Height="29" HorizontalAlignment="Left" Margin="428,93,0,0" Name="buttonUndo" VerticalAlignment="Top" Width="33" Background="#FF8F7A66" FontFamily="Script MT" Foreground="#FFF8F7EC" Click="buttonUndo_Click" IsEnabled="True" BorderBrush="#FF8F7A66"></Button>
+        <CheckBox Content="Undo per game" Height="16" HorizontalAlignment="Left" Margin="0,323,0,0" Name="checkBox2" VerticalAlignment="Top" IsChecked="True" Foreground="#FF868686" Opacity="0" />
+        <TextBlock Background="#FFBBADA0" FontSize="14" Foreground="#FFEEE4DA" Height="23" HorizontalAlignment="Left" Margin="357,33,0,0" Name="textBlock3" Text="TextBlock" TextAlignment="Center" VerticalAlignment="Top" Width="64" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="95,75,0,0" Name="textBlock4" Text="TextBlock" VerticalAlignment="Top" Width="248" TextAlignment="Left" Foreground="#FFBBADA0" FontSize="14" />
+
+        <Button Height="32" HorizontalAlignment="Left" Margin="0,355,0,0" Name="button7" VerticalAlignment="Top" Width="35" BorderBrush="#FFF8F7EC" OpacityMask="{x:Null}" Click="button7_Click" IsDefault="False">
+            <Button.Background>
+                <ImageBrush ImageSource="C:\Users\Daniel\Documents\visual studio 2015\Projects\new2048\new2048\image\menubutton.png" />
+            </Button.Background>
+        </Button>
+        <Label Height="35" HorizontalAlignment="Left" Name="label18" VerticalAlignment="Top" Width="35">
+            <Label.Background>
+                <ImageBrush ImageSource="C:\Users\Daniel\Documents\visual studio 2015\Projects\new2048\new2048\image\edit.png" />
+            </Label.Background>
+        </Label>
+        <Label Content="Label" Height="6" HorizontalAlignment="Left" Margin="2,28,0,0" Name="label19" VerticalAlignment="Top" Width="31" Background="#FF484C55" />
+        <Button Height="35" HorizontalAlignment="Left" Name="edit_button" VerticalAlignment="Top" Width="35" Click="edit_button_Click" Opacity="0">
+            <Button.Background>
+                <SolidColorBrush />
+            </Button.Background>
+            <Image x:Name="menuButton_png" Height="380" Source="menuButton.png" Stretch="Fill" Width="380"/>
+        </Button>
+        <Button Height="36" HorizontalAlignment="Left" Margin="170,137,0,0" Name="edit_1" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_1_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="212,137,0,0" Name="edit_2" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_2_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="254,137,0,0" Name="edit_3" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_3_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="296,263,0,0" Name="edit_16" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_16_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="254,263,0,0" Name="edit_15" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_15_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="212,263,0,0" Name="edit_14" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_14_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="170,263,0,0" Name="edit_13" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_13_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="296,221,0,0" Name="edit_12" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_12_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="254,221,0,0" Name="edit_11" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_11_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="212,221,0,0" Name="edit_10" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_10_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="170,221,0,0" Name="edit_9" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_9_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="296,179,0,0" Name="edit_8" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_8_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="254,179,0,0" Name="edit_7" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_7_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="212,179,0,0" Name="edit_6" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_6_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="170,179,0,0" Name="edit_5" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_5_Click" />
+        <Button Height="36" HorizontalAlignment="Left" Margin="296,137,0,0" Name="edit_4" VerticalAlignment="Top" Width="36" Opacity="0" IsEnabled="False" Click="edit_4_Click" />
+        <Button Content="2" Height="35" HorizontalAlignment="Left" Name="editing_2" VerticalAlignment="Top" Width="35" Margin="0,35,0,0" Background="#FFEEE4DA" BorderBrush="#FFC2B399" Foreground="#FF776E65" FontWeight="Bold" Click="editing_2_Click" Opacity="0" MouseDoubleClick="editing_2_MouseDoubleClick" />
+        <Button Background="#FFEDE0C8" BorderBrush="#FFC2B399" Content="4" FontWeight="Bold" Foreground="#FF776E65" Height="35" HorizontalAlignment="Left" Margin="0,70,0,0" Name="editing_4" VerticalAlignment="Top" Width="35" Click="editing_4_Click" Opacity="0" />
+        <Button Background="#FFEDC53F" BorderBrush="#FFC2B399" Content="1024" FontWeight="Bold" Foreground="#FFF9F6F2" Height="0" HorizontalAlignment="Left" Margin="0,351,0,0" Name="editing_1024" VerticalAlignment="Top" Width="35" Click="editing_1024_Click" Opacity="0" />
+        <Button Background="#FFE2B848" BorderBrush="#FFC2B399" Content="512" FontWeight="Bold" Foreground="#FFF9F6F2" Height="0" HorizontalAlignment="Left" Margin="0,315,0,0" Name="editing_512" VerticalAlignment="Top" Width="35" Click="editing_512_Click" Opacity="0" />
+        <Button Background="#FFE0BD59" BorderBrush="#FFC2B399" Content="256" FontWeight="Bold" Foreground="#FFF9F6F2" Height="35" HorizontalAlignment="Left" Margin="0,280,0,0" Name="editing_256" VerticalAlignment="Top" Width="35" Click="editing_256_Click" Opacity="0" />
+        <Button Background="#FFEDCF72" BorderBrush="#FFC2B399" Content="128" FontWeight="Bold" Foreground="#FFF9F6F2" Height="35" HorizontalAlignment="Left" Margin="0,245,0,0" Name="editing_128" VerticalAlignment="Top" Width="35" Click="editing_128_Click" Opacity="0" />
+        <Button Background="#FFF65E3B" BorderBrush="#FFC2B399" Content="64" FontWeight="Bold" Foreground="#FFF9F6F2" Height="35" HorizontalAlignment="Left" Margin="0,210,0,0" Name="editing_64" VerticalAlignment="Top" Width="35" Click="editing_64_Click" Opacity="0" />
+        <Button Background="#FFF67C5F" BorderBrush="#FFC2B399" Content="32" FontWeight="Bold" Foreground="#FFF9F6F2" Height="35" HorizontalAlignment="Left" Margin="0,175,0,0" Name="editing_32" VerticalAlignment="Top" Width="35" Click="editing_32_Click" Opacity="0" />
+        <Button Background="#FFF59563" BorderBrush="#FFC2B399" Content="16" FontWeight="Bold" Foreground="#FFF9F6F2" Height="35" HorizontalAlignment="Left" Margin="0,140,0,0" Name="editing_16" VerticalAlignment="Top" Width="35" Click="editing_16_Click" Opacity="0" />
+        <Button Background="#FFF2B179" BorderBrush="#FFC2B399" Content="8" FontWeight="Bold" Foreground="#FFF9F6F2" Height="35" HorizontalAlignment="Left" Margin="0,105,0,0" Name="editing_8" VerticalAlignment="Top" Width="35" Click="editing_8_Click" Opacity="0" />
+        <Button Background="#FFCCC0B3" BorderBrush="#FFC2B399" Content="X" FontWeight="Bold" Foreground="OrangeRed" Height="35" HorizontalAlignment="Left" Margin="35,0,0,0" Name="editing_0" Opacity="0" VerticalAlignment="Top" Width="35" Click="editing_0_Click" />
+        <ProgressBar Height="174" HorizontalAlignment="Left" Margin="473,131,0,0" Name="progressBar1" VerticalAlignment="Top" Width="30" Orientation="Vertical" Maximum="4096" Value="0" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="433,210,0,0" Name="textBlock5" Text="2048&gt;------" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF776E65" />
+        <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="433,253,0,0" Name="textBlock6" Text="1024&gt;------" VerticalAlignment="Top" Foreground="#FF776E65" />
+        <TextBlock FontWeight="Bold" Foreground="#FF776E65" Height="23" HorizontalAlignment="Left" Margin="441,274,0,0" Name="textBlock7" Text="512&gt;------" VerticalAlignment="Top" />
+    </Grid>
+</Window>
